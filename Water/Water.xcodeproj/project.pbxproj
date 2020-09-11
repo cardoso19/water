@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2F4D26250AE34200842D4F /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F4D25250AE34200842D4F /* OnboardingViewModel.swift */; };
+		2F2F4D29250AE9F800842D4F /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F4D28250AE9F800842D4F /* UIView+LayoutGuide.swift */; };
 		2F5685AB250ADE4100D5D512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5685AA250ADE4100D5D512 /* AppDelegate.swift */; };
 		2F5685AD250ADE4100D5D512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5685AC250ADE4100D5D512 /* SceneDelegate.swift */; };
 		2F5685B4250ADE4300D5D512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5685B3250ADE4300D5D512 /* Assets.xcassets */; };
 		2F5685B7250ADE4300D5D512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5685B5250ADE4300D5D512 /* LaunchScreen.storyboard */; };
+		2F5685C3250ADFC500D5D512 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5685C2250ADFC500D5D512 /* OnboardingViewController.swift */; };
+		2F5685C5250AE0A300D5D512 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5685C4250AE0A300D5D512 /* OnboardingFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2F4D25250AE34200842D4F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		2F2F4D28250AE9F800842D4F /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
 		2F5685A7250ADE4100D5D512 /* Water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Water.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5685AA250ADE4100D5D512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F5685AC250ADE4100D5D512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2F5685B3250ADE4300D5D512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F5685B6250ADE4300D5D512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F5685B8250ADE4300D5D512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5685C2250ADFC500D5D512 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2F5685C4250AE0A300D5D512 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F2F4D27250AE9D200842D4F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F2F4D28250AE9F800842D4F /* UIView+LayoutGuide.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		2F56859E250ADE4100D5D512 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +68,7 @@
 		2F5685A9250ADE4100D5D512 /* Water */ = {
 			isa = PBXGroup;
 			children = (
+				2F2F4D27250AE9D200842D4F /* Utils */,
 				2F5685BF250ADF0900D5D512 /* Scenes */,
 				2F5685BE250ADEFE00D5D512 /* Config */,
 				2F5685B3250ADE4300D5D512 /* Assets.xcassets */,
@@ -73,8 +90,19 @@
 		2F5685BF250ADF0900D5D512 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F5685C1250ADFA400D5D512 /* Onboarding */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F5685C1250ADFA400D5D512 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2F5685C2250ADFC500D5D512 /* OnboardingViewController.swift */,
+				2F5685C4250AE0A300D5D512 /* OnboardingFactory.swift */,
+				2F2F4D25250AE34200842D4F /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2F4D26250AE34200842D4F /* OnboardingViewModel.swift in Sources */,
 				2F5685AB250ADE4100D5D512 /* AppDelegate.swift in Sources */,
+				2F5685C5250AE0A300D5D512 /* OnboardingFactory.swift in Sources */,
+				2F2F4D29250AE9F800842D4F /* UIView+LayoutGuide.swift in Sources */,
+				2F5685C3250ADFC500D5D512 /* OnboardingViewController.swift in Sources */,
 				2F5685AD250ADE4100D5D512 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7836M9296;
 				INFOPLIST_FILE = Water/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7836M9296;
 				INFOPLIST_FILE = Water/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
